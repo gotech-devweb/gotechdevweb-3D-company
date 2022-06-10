@@ -184,7 +184,7 @@ orbitControls.update();
 // Model with animation
 var model, mixerCharater, status = false,
     characterControls;
-new GLTFLoader().load('../public/assets/Soldier.glb', function(gltf) {
+new GLTFLoader().load('../assets/Soldier.glb', function(gltf) {
     model = gltf.scene;
     model.traverse(function(object) {
         if (object.isMesh) {
@@ -225,7 +225,7 @@ scene.add(dirLight);
 // Create ground
 // TEXTURES
 const textureLoader = new THREE.TextureLoader();
-const placeholder = textureLoader.load("../public/assets/placeholder.png");
+const placeholder = textureLoader.load("../assets/placeholder.png");
 
 const WIDTH = 200
 const LENGTH = 200
@@ -241,7 +241,7 @@ scene.add(floor)
 
 for (let i = 0; i < 5; i++) {
     const road = new THREE.TextureLoader();
-    const roadPlacehoder = road.load("../public/assets/stone.jpg");
+    const roadPlacehoder = road.load("../assets/stone.jpg");
 
     const geometryRoad = new THREE.PlaneGeometry(1, 1);
     const materialRoad = new THREE.MeshBasicMaterial({ map: roadPlacehoder })
@@ -258,7 +258,7 @@ for (let i = 0; i < 5; i++) {
 
 for (let i = -100; i < 100; i++) {
     const road = new THREE.TextureLoader();
-    const roadPlacehoder = road.load("../public/assets/street.jpg");
+    const roadPlacehoder = road.load("../assets/street.jpg");
 
     const geometryRoad = new THREE.PlaneGeometry(1, 1);
     const materialRoad = new THREE.MeshBasicMaterial({ map: roadPlacehoder })
@@ -277,7 +277,7 @@ for (let i = -100; i < 100; i++) {
 const gltfLoader = new GLTFLoader();
 var mixerFoutain, mixerHologram;
 
-gltfLoader.load('../public/assets/module/1.company/scene.gltf', (gltfScene) => {
+gltfLoader.load('../assets/module/1.company/scene.gltf', (gltfScene) => {
     var loadGLTF = gltfScene.scene;
     loadGLTF.scale.set(0.3, 0.3, 0.3);
     loadGLTF.position.set(0, 0.5, 0)
@@ -285,7 +285,7 @@ gltfLoader.load('../public/assets/module/1.company/scene.gltf', (gltfScene) => {
 })
 
 // Machine Drink
-gltfLoader.load('../public/assets/module/2.machine/scene.gltf', (gltfScene) => {
+gltfLoader.load('../assets/module/2.machine/scene.gltf', (gltfScene) => {
     var loadGLTF = gltfScene.scene;
     loadGLTF.scale.set(0.5, 0.5, 0.5);
     loadGLTF.position.set(3, 0, -3)
@@ -293,7 +293,7 @@ gltfLoader.load('../public/assets/module/2.machine/scene.gltf', (gltfScene) => {
 })
 
 // Sign Ads
-gltfLoader.load('../public/assets/module/10.sign/scene.gltf', (gltfScene) => {
+gltfLoader.load('../assets/module/10.sign/scene.gltf', (gltfScene) => {
     var loadGLTF = gltfScene.scene;
     loadGLTF.scale.set(0.005, 0.005, 0.005);
     loadGLTF.rotation.y = -Math.PI / 2
@@ -302,7 +302,7 @@ gltfLoader.load('../public/assets/module/10.sign/scene.gltf', (gltfScene) => {
 })
 
 // Sign Board Name
-gltfLoader.load('../public/assets/module/12.sign_name/scene.gltf', (gltfScene) => {
+gltfLoader.load('../assets/module/12.sign_name/scene.gltf', (gltfScene) => {
     var loadGLTF = gltfScene.scene;
     loadGLTF.scale.set(0.1, 0.1, 0.1);
     loadGLTF.rotation.y = 3
@@ -311,14 +311,14 @@ gltfLoader.load('../public/assets/module/12.sign_name/scene.gltf', (gltfScene) =
 })
 
 // Sign Board
-// gltfLoader.load('../public/assets/module/11.sign_board/scene.gltf', (gltfScene) => {
+// gltfLoader.load('../assets/module/11.sign_board/scene.gltf', (gltfScene) => {
 //     var loadGLTF = gltfScene.scene;
 //     loadGLTF.scale.set(0.01, 0.01, 0.01);
 //     loadGLTF.rotation.y = 3
 //     loadGLTF.position.set(4, 0, 3.5)
 
 //     const road = new THREE.TextureLoader();
-//     const roadPlacehoder = road.load("../public/assets/logo.png");
+//     const roadPlacehoder = road.load("../assets/logo.png");
 
 //     const geometryRoad = new THREE.PlaneGeometry(1, 1);
 //     const materialRoad = new THREE.MeshBasicMaterial({ map: roadPlacehoder })
@@ -340,7 +340,7 @@ gltfLoader.load('../public/assets/module/12.sign_name/scene.gltf', (gltfScene) =
 // })
 
 // Sign Board Name
-gltfLoader.load('../public/assets/module/5.tree3/scene.gltf', (gltfScene) => {
+gltfLoader.load('../assets/module/5.tree3/scene.gltf', (gltfScene) => {
     var loadGLTF = gltfScene.scene;
     loadGLTF.scale.set(0.5, 0.5, 0.5);
     loadGLTF.rotation.y = 3
@@ -348,7 +348,7 @@ gltfLoader.load('../public/assets/module/5.tree3/scene.gltf', (gltfScene) => {
     scene.add(loadGLTF);
 })
 
-gltfLoader.load('../public/assets/module/4.tree2/scene.gltf', (gltfScene) => {
+gltfLoader.load('../assets/module/4.tree2/scene.gltf', (gltfScene) => {
     var loadGLTF = gltfScene.scene;
     loadGLTF.scale.set(0.5, 0.5, 0.5);
     loadGLTF.rotation.y = 3
@@ -357,7 +357,7 @@ gltfLoader.load('../public/assets/module/4.tree2/scene.gltf', (gltfScene) => {
 })
 
 // Foutain
-// gltfLoader.load('../public/assets/module/7.fountain/scene.gltf', (gltfScene) => {
+// gltfLoader.load('../assets/module/7.fountain/scene.gltf', (gltfScene) => {
 //     var loadGLTF = gltfScene.scene;
 //     loadGLTF.scale.set(0.002, 0.002, 0.002);
 //     loadGLTF.position.set(-6, -0.1, 10)
@@ -372,7 +372,7 @@ gltfLoader.load('../public/assets/module/4.tree2/scene.gltf', (gltfScene) => {
 //     });
 // })
 
-// gltfLoader.load('../public/assets/module/9.hologram_earth/scene.gltf', (gltfScene) => {
+// gltfLoader.load('../assets/module/9.hologram_earth/scene.gltf', (gltfScene) => {
 //     var loadGLTF = gltfScene.scene;
 //     loadGLTF.scale.set(0.3, 0.3, 0.3);
 //     loadGLTF.position.set(1, 7, -4)
@@ -392,8 +392,8 @@ const about = new ThreeMeshUI.Block({
     height: 1.2,
     padding: 0.2,
     fontSize: 0.09,
-    fontFamily: "../public/node_modules/three-mesh-ui/examples/assets/Roboto-msdf.json",
-    fontTexture: "../public/node_modules/three-mesh-ui/examples/assets/Roboto-msdf.png",
+    fontFamily: "../node_modules/three-mesh-ui/examples/assets/Roboto-msdf.json",
+    fontTexture: "../node_modules/three-mesh-ui/examples/assets/Roboto-msdf.png",
     padding: 0.05,
     backgroundColor: new THREE.Color(0x000000),
     backgroundOpacity: 0.7,
@@ -421,8 +421,8 @@ const demo = new ThreeMeshUI.Block({
     height: 1.2,
     padding: 0.2,
     fontSize: 0.09,
-    fontFamily: "../public/node_modules/three-mesh-ui/examples/assets/Roboto-msdf.json",
-    fontTexture: "../public/node_modules/three-mesh-ui/examples/assets/Roboto-msdf.png",
+    fontFamily: "../node_modules/three-mesh-ui/examples/assets/Roboto-msdf.json",
+    fontTexture: "../node_modules/three-mesh-ui/examples/assets/Roboto-msdf.png",
     padding: 0.05,
     backgroundColor: new THREE.Color(0x000000),
     backgroundOpacity: 0.7,
@@ -456,10 +456,10 @@ scene.add(demo);
 // Menu sign
 
 const geometryS = new THREE.BoxGeometry(1, 1, 0.1);
-const materialS1 = new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load('../public/assets/about.png') });
-const materialS2 = new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load('../public/assets/service.jpg') });
-const materialS3 = new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load('../public/assets/demo.png') });
-const materialS4 = new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load('../public/assets/demo.png') });
+const materialS1 = new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load('../assets/about.png') });
+const materialS2 = new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load('../assets/service.jpg') });
+const materialS3 = new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load('../assets/demo.png') });
+const materialS4 = new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load('../assets/demo.png') });
 
 
 const mesh1 = new THREE.Mesh(geometryS, materialS1);
@@ -504,7 +504,7 @@ mmi.addHandler('bulb1', 'click', function() {
 
     const geometryBox = new THREE.BoxGeometry(0.5, 0.5, 0.1);
     const materialBox = new THREE.MeshBasicMaterial({
-        map: new THREE.TextureLoader().load('../public/assets/close.png')
+        map: new THREE.TextureLoader().load('../assets/close.png')
     });
     const button = new THREE.Mesh(geometryBox, materialBox);
     button.scale.set(0.1, 0.1, 0.1)
@@ -532,7 +532,7 @@ mmi.addHandler('bulb2', 'click', function() {
 
     const geometryBox = new THREE.BoxGeometry(0.5, 0.5, 0.1);
     const materialBox = new THREE.MeshBasicMaterial({
-        map: new THREE.TextureLoader().load('../public/assets/close.png')
+        map: new THREE.TextureLoader().load('../assets/close.png')
     });
     const button = new THREE.Mesh(geometryBox, materialBox);
     button.scale.set(0.1, 0.1, 0.1)
@@ -561,7 +561,7 @@ const boxEmployee = new THREE.Mesh(geometryEmployee, materialEmploye);
 boxEmployee.position.set(5, 0.4, 0)
 boxEmployee.name = 'employeeView';
 scene.add(boxEmployee)
-gltfLoader.load('../public/assets/module/13.employee/scene.gltf', (gltfScene) => {
+gltfLoader.load('../assets/module/13.employee/scene.gltf', (gltfScene) => {
     var loadGLTF = gltfScene.scene;
     loadGLTF.scale.set(0.001, 0.001, 0.001);
     loadGLTF.position.set(5, 1.75, 0)
@@ -573,7 +573,7 @@ const boxEmployee2 = new THREE.Mesh(geometryEmployee, materialEmploye);
 boxEmployee2.position.set(5, 0.4, -3)
 boxEmployee2.name = 'employeeView';
 scene.add(boxEmployee2)
-gltfLoader.load('../public/assets/module/13.employee/scene.gltf', (gltfScene) => {
+gltfLoader.load('../assets/module/13.employee/scene.gltf', (gltfScene) => {
     var loadGLTF = gltfScene.scene;
     loadGLTF.scale.set(0.001, 0.001, 0.001);
     loadGLTF.position.set(5, 1.75, -3)
@@ -585,8 +585,8 @@ gltfLoader.load('../public/assets/module/13.employee/scene.gltf', (gltfScene) =>
 const container = new ThreeMeshUI.Block({
     ref: "container",
     padding: 0.025,
-    fontFamily: "../public/node_modules/three-mesh-ui/examples/assets/Roboto-msdf.json",
-    fontTexture: "../public/node_modules/three-mesh-ui/examples/assets/Roboto-msdf.png",
+    fontFamily: "../node_modules/three-mesh-ui/examples/assets/Roboto-msdf.json",
+    fontTexture: "../node_modules/three-mesh-ui/examples/assets/Roboto-msdf.png",
     fontColor: new THREE.Color(0xffffff),
     backgroundOpacity: 0,
 });
@@ -702,7 +702,7 @@ container.add(contentContainer);
 
 //
 
-new THREE.TextureLoader().load("../public/assets/avt.jpg", (texture) => {
+new THREE.TextureLoader().load("../assets/avt.jpg", (texture) => {
     leftSubBlock.set({
         backgroundTexture: texture,
     });
@@ -717,7 +717,7 @@ mmi.addHandler('employeeView', 'click', function() {
 
     const geometryBox = new THREE.BoxGeometry(0.5, 0.5, 0.2);
     const materialBox = new THREE.MeshBasicMaterial({
-        map: new THREE.TextureLoader().load('../public/assets/close.png')
+        map: new THREE.TextureLoader().load('../assets/close.png')
     });
     const button = new THREE.Mesh(geometryBox, materialBox);
     button.scale.set(0.1, 0.1, 0.1)

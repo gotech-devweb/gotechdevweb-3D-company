@@ -1,0 +1,11 @@
+Model Information:
+* title:	YABANE Pole(Japanese Traffic Sign)
+* source:	https://sketchfab.com/3d-models/yabane-polejapanese-traffic-sign-e4c9b6a856ca419d83501488d6ef64e1
+* author:	道路舗装 (https://sketchfab.com/HosoRoad)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "YABANE Pole(Japanese Traffic Sign)" (https://sketchfab.com/3d-models/yabane-polejapanese-traffic-sign-e4c9b6a856ca419d83501488d6ef64e1) by 道路舗装 (https://sketchfab.com/HosoRoad) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

@@ -1,0 +1,28 @@
+{
+  "name": "threejs",
+  "version": "1.0.0",
+  "description": "- Demo metaverse with three.js\r - GotechJCS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trongld21/threejs-metaverse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trongld21/threejs-metaverse/issues"
+  },
+  "homepage": "https://github.com/trongld21/threejs-metaverse#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "three": "^0.141.0",
+    "three-gltf-loader": "^1.111.0",
+    "three-mesh-ui": "^6.4.4",
+    "three.interactive": "^1.3.2",
+    "threex.domevents": "^1.0.1"
+  }
+}

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Shieldsmith Sign
+* source:	https://sketchfab.com/3d-models/shieldsmith-sign-be7df27d791b40aa9e44452794025684
+* author:	Johannes R. (https://sketchfab.com/selkie3d)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Shieldsmith Sign" (https://sketchfab.com/3d-models/shieldsmith-sign-be7df27d791b40aa9e44452794025684) by Johannes R. (https://sketchfab.com/selkie3d) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
